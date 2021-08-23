@@ -5,5 +5,9 @@ services:
     image: bedrock-server:latest
     ports:
       - "0.0.0.0:19132:19132/udp"
+    volumes:
+      - mc_data:/opt/bedrock_server
     restart: always
+volumes:
+  mc_data:
 
